@@ -24,8 +24,8 @@
         background-position     : center;
         background-size         : cover;
         background-repeat       : no-repeat;
-        width                   : 100%;
-        min-height              : 100vh;
+        /* width                   : 100%; */
+        /* min-height              : 100vh; */
         font-size               : 14px;
         display                 : flex;
         justify-content         : center;
@@ -166,7 +166,7 @@
 
 
     <p class="title" data-text="COMING SOON"> COMING SOON</p>
-    <p class="subtitle"> Something brillant comin soon , We are reachable at Hello@Shandaqdental.com</p>
+    <p class="subtitle"> Something brillant comin soon , We are reachable at Hello@dr_Abdalmajed.com</p>
 
         <div class="counter_list_container">
             <div class="container_item">
