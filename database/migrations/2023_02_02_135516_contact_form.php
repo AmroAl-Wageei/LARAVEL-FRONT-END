@@ -13,17 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('ContactForm', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->integer('phone')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('image')->default('icon.png');
-            $table->string('password');
-            $table->boolean('is_admin')->default(0);
-            $table->softDeletes();
-            $table->rememberToken();
+            $table->string('email');
+            $table->string('phoneNumber');
+            $table->string('subject');
+            $table->text('message');
             $table->timestamps();
         });
     }
@@ -35,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('ContactForm');
     }
 };
